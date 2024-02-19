@@ -219,7 +219,8 @@
                     <hr class="mt-2 mb-2" />
                     <div class="bg-gray-100 px-5 py-5 rounded-xl">
                         <div class="flex justify-between mt-4">
-                            <p class="font-inter font-bold">Seat <span class="bg-green-500 p-1 rounded-xl text-white">0</span></p>
+                            <p class="font-inter font-bold">Seat <span
+                                    class="bg-green-500 p-1 rounded-xl text-white">0</span></p>
                             <p class="font-inter font-bold">Class</p>
                             <p class="font-inter font-bold">Price</p>
                         </div>
@@ -236,9 +237,86 @@
                             <p class="font-bold text-[#03071299]">BDT<span class="font-bold">0</span></p>
                         </div>
                     </div>
-                        <!-- select your seat section end -->
+                    <!-- select your seat section end -->
+
+                    <!-- discount section start -->
+                    <div>
+                    </div>
+                    <div lass="flex justify-between bg-white py-2 px-3 rounded-xl mt-4">
+                        <input class="px-3 py-2" placeholder="Have any coupon?" type="text">
+                        <button disabled id="apply"
+                            class="bg-green-500 px-3 py-2 rounded-xl text-white X">Apply</button>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                        <p class="font-bold">Grand Total</p>
+                        <p class="font-bold">BDT <span class="font-bold">0</span></p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-bold">Passenger Name*</p>
+                        <input class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your name" type="text">
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-bold">Phone Number*</p>
+                        <input id="phone" class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your phone number"
+                            type="number">
+                    </div>
+                    <div class="mt-4">
+                        <p class="font-bold">Email ID</p>
+                        <input class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your email id" type="text">
+                    </div>
+                    <button onclick="modal_1.showModal()"
+                        class="w-full bg-green-500 text-center text-white py-5 mt-4 rounded-xl">Next</button>
+                    <dialog id="modal_1" class="modal">
+                        <div class="modal-box">
+                            <div class="flex flex-col justify-center items-center space-y-2">
+                                <img class="flex flex-col justify-center items-center" src="./images/success.png" alt="">
+                                <h3 class="font-bold text-lg">SUCCESS</h3>
+                                <p class="py-4 text-[#4A4A4A] font-bold">Your bus seats are booked! We're diligently seeking top-notch service and deals for you. Expect a confirmation email soon.
+                                    <br>
+                                   <p> Thank You.</p>
+                                </p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- continue button -->
+                                        <button id="next" class="btn btn-success text-white">Continue</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
+    <!-- discount section end -->
+
+    <!-- footer start -->
+    <footer class=" bg-black text-white font-inter min-h-[357px]">
+        <div class=" container mx-auto lg:flex justify-between items-center pt-24 pb-8">
+            <div>
+                <p class="font-[Raleway] text-3xl font-extrabold">D-Ticket</p>
+                <p class="w-96 text-sm ">B-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div class="space-y-2">
+                <p class="text-sm  font-semibold font-raleway">Download our app</p>
+                <img src="./images/playstore.png">
+            </div>
+        </div>
+        <hr>
+        <div class=" container mx-auto lg:flex justify-between pt-10">
+            <div>
+                <p>@all rights reserved, D-Ticket services limited.2024</p>
+            </div>
+            <div class="text-sm font-medium flex gap-5">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
 </body>
 
 </html>
