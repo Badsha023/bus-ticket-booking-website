@@ -19,7 +19,7 @@
 
 <!-- navbar start -->
 
-<body>
+<body class="bg-[#F7F8F8]">
     <main>
         <section>
             <nav class="container mx-auto pt-5 font-raleway">
@@ -119,7 +119,10 @@
         <section class="bg-[#F7F8F8] rounded-t-[90px] border border-t-blue-500">
             <div class="container mx-auto space-y-3 py-9">
                 <h1 class="text-raleway text-center text-4xl font-bold">Badsha Paribahan</h1>
-                <p class="font-inter lg:ml-96 text-center text-sm font-[400px] max-w-[736px] ">Passengers are kindly reminded to utilize the phone number used during e-ticket purchase. Forwarded SMS will not be accepted, and any tickets will be considered canceled. Your cooperation is appreciated in providing beautiful and clean service..</p>
+                <p class="font-inter lg:ml-96 text-center text-sm font-[400px] max-w-[736px] ">Passengers are kindly
+                    reminded to utilize the phone number used during e-ticket purchase. Forwarded SMS will not be
+                    accepted, and any tickets will be considered canceled. Your cooperation is appreciated in providing
+                    beautiful and clean service..</p>
             </div>
             <div class="container mx-auto my-10 bg-[#FFF] rounded-lg flex justify-around items-center">
                 <div class="space-y-5 ">
@@ -133,8 +136,7 @@
                         </div>
                         <div class="flex items-center rounded-lg bg-[#1DD10026] ">
                             <img src="./images/seat-green-filled.png" alt="">
-                            <h4 class="text-inter text-xl px-4 py-2 font-medium"><span
-                                    id="current-available-seat">40</span> Seats left</h4>
+                            <h4 class="text-inter text-xl px-4 py-2 font-medium"><span>40</span> Seats left</h4>
                         </div>
                     </div>
                     <div class="space-y-5">
@@ -161,13 +163,80 @@
                     <div class="flex flex-col text-center justify-center">
                         <div><img class="pl-6" src="./images/fare.png" alt=""></div>
                         <div>
-                            <h1 id="vara-amount" class="font-raleway text-2xl font-bold"> 550 Taka </h1>
-                            <p class=" text-[#03071299] font-raleway font-bold">Per Seat</p>
+                            <h1 class="font-raleway text-2xl font-bold"> 550 Taka </h1>
+                            <p class="text-[#03071299] font-raleway font-bold">Per Seat</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- paribahan section end -->
+        </section>
+        <!-- paribahan section end -->
+
+
+        <!-- select your seat section start -->
+        <section class="container mx-auto bg-[#F7F8F8] px-4 mb-36 py-6 rounded-xl">
+            <div class="bg-white px-4 py-6 flex gap-14 flex-col lg:flex-row rounded-xl">
+                <div class="flex-1">
+                    <h1 class="mb-2 text-[24px] font-raleway font-bold">Select Your Seat</h1>
+                    <hr>
+                    <div class="flex justify-between mt-4">
+                        <div class="flex gap-3">
+                            <img src="./images/seat-gray.png" alt="" />
+                            <p>Available</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="./images/seat-green.png" alt="" />
+                            <p>Selected</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mt-7 flex justify-end">
+                        <img class="px-5 py-3 bg-gray-200 rounded-xl" src="./images/wheel.jpg" alt="" />
+                    </div>
+                    <!-- seat list start -->
+                    <div>
+                        <!-- a -->
+                        <div class="flex justify-between mt-5">
+                            <p class="px-7 py-3">A</p>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">A1</button>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">A2</button>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">A3</button>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">A4</button>
+                        </div>
+                        <!-- b -->
+                        <div class="flex justify-between mt-5">
+                            <p class="px-7 py-3">B</p>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">B1</button>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">B2</button>
+                            <button class="px-7 py-3 seat bg-gray-200 rounded-xl">B3</button>
+                            <button class=" px-7 py-3 seat bg-gray-200 rounded-xl">B4</button>
+                        </div>
+                    </div>
+                    <!-- seat list end -->
+                </div>
+                <div class="w-1/3">
+                    <h1 class="mb-2 text-2xl font-raleway font-bold">Select Your Seat</h1>
+                    <hr class="mt-2 mb-2" />
+                    <div class="bg-gray-100 px-5 py-5 rounded-xl">
+                        <div class="flex justify-between mt-4">
+                            <p class="font-inter font-bold">Seat <span class="bg-green-500 p-1 rounded-xl text-white">0</span></p>
+                            <p class="font-inter font-bold">Class</p>
+                            <p class="font-inter font-bold">Price</p>
+                        </div>
+                        <div id="ui">
+
+                        </div>
+                        <hr class="mt-2 mb-2">
+                        <div class="flex justify-between">
+                            <p class="font-bold text-[#03071299]">Total Price</p>
+                            <p class="font-bold text-[#03071299]">BDT<span class="font-bold">0</span></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="font-bold text-[#03071299]">Discount</p>
+                            <p class="font-bold text-[#03071299]">BDT<span class="font-bold">0</span></p>
+                        </div>
+                    </div>
+                        <!-- select your seat section end -->
         </section>
     </main>
 </body>
