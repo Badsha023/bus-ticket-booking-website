@@ -85,7 +85,6 @@ for (let i = 0; i < seats.length; i++) {
 function setBackgroundById(id) {
   document.getElementById(id).style.backgroundColor = "gray";
 }
-
   // interaction apply button
   function applyDiscount() {
     const grandPriceElement = document.getElementById("grand-total");
@@ -93,7 +92,6 @@ function setBackgroundById(id) {
     
     const inputValue = document.getElementById("input").value;
     let discountPercentage = 0;
-  
     switch(inputValue) {
       case "NEW15":
         discountPercentage = 0.15;
@@ -120,9 +118,7 @@ function setBackgroundById(id) {
   
   document.getElementById("apply").addEventListener("click", applyDiscount);
   
-  
   // clear all process
-  
   document.getElementById('next').addEventListener('click', redirectToCurrentPage);
   function redirectToCurrentPage() {
       window.location.href = window.location.href;
