@@ -1,6 +1,6 @@
 // set background
 
-function setBackgroundById(elementId){
+function setBackgroundById(elementId) {
     const element = document.getElementById(elementId);
-    element.classList.add('bg-green-500')
+    element.style.backgroundColor = '#1DD100';
 }
